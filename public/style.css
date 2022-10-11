@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'poppins';
+    font-size: 16px;
 }
 
 ul {
@@ -20,7 +21,7 @@ li {
 
 li p {
     margin: 0;
-    background-color: burlywood;
+    /* background-color: burlywood; */
 }
 
 li p, span, time {
@@ -28,7 +29,7 @@ li p, span, time {
 }
 
 time {
-    background-color: powderblue;
+    /* background-color: powderblue; */
 }
 
 .green {
@@ -53,7 +54,18 @@ input, button{
 
 #inputText {
     position: fixed;
-    bottom: 80px;
+    bottom: 60px;
     left: 30cm;
     right: 5cm;
+}
+
+header {
+    background-color: dodgerblue;
+    text-align: center;
+    height: 70px;
+}
+
+.box {
+    margin-top: 30px;
+    margin-left: 30px;
 }

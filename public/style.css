@@ -1,3 +1,10 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins';
+}
+
 ul {
     margin: 2rem 0;
     padding: 0;
@@ -8,10 +15,20 @@ li {
     display: grid;
     /* child elements */
     grid-template-columns: 1fr 5fr 1fr;
+    margin: 10px;
 }
 
 li p {
-    margin: 0
+    margin: 0;
+    background-color: burlywood;
+}
+
+li p, span, time {
+    padding: 5px;
+}
+
+time {
+    background-color: powderblue;
 }
 
 .green {
@@ -20,4 +37,23 @@ li p {
 
 #canvas {
     border: 2px solid rgb(112, 7, 145);
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    width: 500px;
+}
+
+input, button{
+    border:1px solid #555;
+    padding:10px;
+    border-radius:20px;
+}
+
+#inputText {
+    position: fixed;
+    bottom: 80px;
+    left: 30cm;
+    right: 5cm;
 }

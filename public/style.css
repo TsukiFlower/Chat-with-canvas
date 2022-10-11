@@ -17,3 +17,7 @@ li p {
 .green {
     background-color: orange;
 }
+
+#canvas {
+    border: 2px solid rgb(112, 7, 145);
+}

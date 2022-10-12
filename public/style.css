@@ -33,7 +33,12 @@ time {
 }
 
 .orange {
-    background-color: orange;
+    border: 1px solid orange;
+    border-radius: 10px;
+    padding: 8px;
+    box-shadow: 3px 10px 15px 5px orange inset;
+    background-color: rgb(255, 194, 81);
+    text-align: center;
 }
 
 #canvas {
@@ -62,10 +67,14 @@ input, button{
 header {
     background-color: dodgerblue;
     box-shadow: 5px 10px 20px 5px rgb(61, 135, 209) inset;
-    text-align: center;
     /* height: 70px; */
-    padding: 30px 0 30px 0;
+    padding: 25px 0 25px 0;
+}
+
+h2 {
+    font-size: 24px;
     color: white;
+    text-align: center;
 }
 
 .box {
@@ -75,7 +84,13 @@ header {
 
 .container {
     max-width: 1400px;
-    /* height: 950px; */
     margin: 0 auto 0 auto;
     /* border: 1px solid grey; */
+    height: 950px;
+    background-image: url("images/starV0.3.png");
 }
+
+/* .img-box {
+    height: 800px;
+    background-image: url("images/starV0.2.png");
+} */

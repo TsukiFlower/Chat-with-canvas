@@ -117,7 +117,7 @@ function renderMessage(obj) {
 
     // change content...
     newMsg.querySelector("span").textContent = obj.nickname;
-    newMsg.querySelector("span").setAttribute('class', 'green');
+    newMsg.querySelector("span").setAttribute('class', 'orange');
     newMsg.querySelector("p").textContent = obj.msg;
 
     // new date object

@@ -11,40 +11,41 @@
 
 <body>
 
-    <!-- server status -->
-    <div id="status"></div>
+    <div class="container">
+        <!-- server status -->
+        <div id="status"></div>
 
-    <header>TITLE</header>
+        <header>TITLE</header>
 
-    <!-- input nickname -->
-    <div class="box">
-        <input type="text" id="nickname" placeholder="Enter name">
-        <button id="setNickname">Set name</button>
+        <!-- input nickname -->
+        <div class="box">
+            <input type="text" id="nickname" placeholder="Enter name">
+            <button id="setNickname">Set name</button>
+        </div>
+
+        <!-- input chat -->
+        <input type="text" id="inputText" placeholder="Type and press Enter" disabled>
+
+        <!-- DOM chat -->
+        <ul id="conversation"></ul>
+
+        <!-- use template to set html structure for a message -->
+        <template id="message">
+
+            <li>
+                <span></span>
+                <p></p>
+                <time datetime=""></time>
+            </li>
+
+        </template>
+
+        <canvas id="canvas"></canvas>
+
+
+        <script src="js/code.js"></script>
+        <script src="js/canvas.js"></script>
     </div>
-
-    <!-- input chat -->
-    <input type="text" id="inputText" placeholder="Type and press Enter" disabled>
-
-    <!-- DOM chat -->
-    <ul id="conversation"></ul>
-
-    <!-- use template to set html structure for a message -->
-    <template id="message">
-
-        <li>
-            <span></span>
-            <p></p>
-            <time datetime=""></time>
-        </li>
-
-    </template>
-
-    <canvas id="canvas"></canvas>
-
-
-    <script src="js/code.js"></script>
-    <script src="js/canvas.js"></script>
-
 </body>
 
 </html>

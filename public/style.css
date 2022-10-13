@@ -49,6 +49,7 @@ time {
     margin-right: auto;
     display: block;
     width: 400px;
+    /* background-color: grey; */
 }
 
 input, button{

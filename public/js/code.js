@@ -10,7 +10,10 @@ let nickname;
 // use WebSocket >>> make sure server uses same ws port!
 const websocket = new WebSocket("ws://localhost:80");  
 
+const canvas = document.getElementById("canvas");
+const ctx = canvas.getContext("2d");
 
+console.log(ctx)
 
 
 /* event listeners
@@ -72,6 +75,10 @@ inputText.addEventListener("keydown", (event) => {
         // send to server
         websocket.send(JSON.stringify(objMessage));
 
+        
+        // writeCanvas
+        ctx.fillStyle = "red";
+        ctx.fillText(inputText.value, 20, 20);
         // reset input field
         inputText.value = "";
     }
@@ -135,3 +142,5 @@ function renderMessage(obj) {
     // render using prepend method - last message first
     document.getElementById("conversation").prepend(newMsg);
 }
+
+

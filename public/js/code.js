@@ -76,8 +76,9 @@ inputText.addEventListener("keydown", (event) => {
         websocket.send(JSON.stringify(objMessage));
 
         
-        // writeCanvas
-        ctx.fillStyle = "red";
+        // write Canvas 
+        colors = ['red', 'blue', 'green'];
+        ctx.fillStyle = inputText.value * colors.length;
         ctx.fillText(inputText.value, 20, 20);
         // reset input field
         inputText.value = "";

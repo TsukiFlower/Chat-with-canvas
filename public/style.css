@@ -42,14 +42,15 @@ time {
 }
 
 #canvas {
+    position: fixed;
+    bottom: 5cm;
+    right: 8cm;
     border: 2px solid rgb(112, 7, 145);
     padding-left: 0;
     padding-right: 0;
-    margin-left: auto;
-    margin-right: auto;
     display: block;
     width: 400px;
-    /* background-color: grey; */
+    background-color: white;
 }
 
 input, button{

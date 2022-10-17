@@ -75,11 +75,20 @@ inputText.addEventListener("keydown", (event) => {
         // send to server
         websocket.send(JSON.stringify(objMessage));
 
-        
+
+
         // write Canvas 
-        colors = ['red', 'blue', 'green'];
-        ctx.fillStyle = inputText.value * colors.length;
-        ctx.fillText(inputText.value, 20, 20);
+        // colors = ['red', 'blue', 'green'];
+        // ctx.fillStyle = inputText.value * colors.length;
+        // ctx.fillStyle = 'blue';
+        // ctx.fillText(inputText.value, 20, 20);
+
+        
+        // emoji generator Canvas 
+        emoji = ['❤️', '🧡', '🤣', '⭐', '🥰', '😘', '(」°ロ°)」', 'ヽ(*・ω・)ﾉ', '∑(O_O;)']
+        ctx.fillText(emoji[Math.floor(emoji.length * Math.random())], 20 * Math.random(), 20 * Math.random());
+        console.log('emoji', emoji[2]);
+
         // reset input field
         inputText.value = "";
     }

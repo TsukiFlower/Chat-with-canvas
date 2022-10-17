@@ -85,9 +85,9 @@ inputText.addEventListener("keydown", (event) => {
 
         
         // emoji generator Canvas 
-        emoji = ['❤️', '🧡', '🤣', '⭐', '🥰', '😘', '(」°ロ°)」', 'ヽ(*・ω・)ﾉ', '∑(O_O;)']
+        emoji = ['❤️', '🧡', '🤣', '⭐', '🥰', '😘', '🌈', '🍀', '🍓', '(」°ロ°)」', 'ヽ(*・ω・)ﾉ', '∑(O_O;)', 'o(>ω <)o', '(⁄ ⁄•⁄ω⁄•⁄ ⁄)'];
+
         ctx.fillText(emoji[Math.floor(emoji.length * Math.random())], 20 * Math.random(), 20 * Math.random());
-        console.log('emoji', emoji[2]);
 
         // reset input field
         inputText.value = "";

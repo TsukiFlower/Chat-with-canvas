@@ -18,7 +18,7 @@ li {
     display: grid;
     /* child elements */
     grid-template-columns: 1fr 5fr 1fr;
-    margin: 10px;
+    margin: 10px 10px 10px 30px;
 }
 
 li p {

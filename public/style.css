@@ -107,11 +107,6 @@ li p, span, time {
     padding: 5px;
 }
 
-time {
-    /* background-color: powderblue; */
-    
-}
-
 .orange {
     border: 1px solid orange;
     border-radius: 10px;

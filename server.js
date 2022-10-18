@@ -88,8 +88,16 @@ wss.on("connection", (ws) => {
         // use obj property 'type' to handle message event
         switch (obj.type) {
             case "text":
+
                 break;
-            case "somethingelse":
+            case "emoji":
+                // const x = obj.x;
+                // const y = obj.y;
+                // const emoji = obj.emoji;
+
+                // // now draw the emoji at the coordinate server told you.
+                // ctx.fillText(emoji, x, y, emoji);
+            
                 break;
             default:
                 break;
@@ -102,6 +110,7 @@ wss.on("connection", (ws) => {
             nickname: obj.nickname,
         };
 
+        
         // broadcast to all but this ws...
         broadcastButExclude(wss, ws, objBroadcast);
     });

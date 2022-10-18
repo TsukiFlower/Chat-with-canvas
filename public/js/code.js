@@ -10,10 +10,18 @@ let nickname;
 // use WebSocket >>> make sure server uses same ws port!
 const websocket = new WebSocket("ws://localhost:80");  
 
+
+// const canvasHeight = 480;
+// const canvasWidth = 640;
+
 const canvas = document.getElementById("canvas");
 const ctx = canvas.getContext("2d");
 
-console.log(ctx)
+
+// ctx.canvasWidth = canvasWidth;
+// ctx.canvasHeight = canvasHeight;
+
+// console.log(canvasHeight, canvasWidth)
 
 
 /* event listeners
@@ -36,7 +44,7 @@ websocket.addEventListener("message", (event) => {
     switch (obj.type) {
         case "text":
             break;
-        case "somethingelse":
+        case "":
             break;
         default:
             break;
@@ -76,7 +84,6 @@ inputText.addEventListener("keydown", (event) => {
         websocket.send(JSON.stringify(objMessage));
 
 
-
         // write Canvas 
         // colors = ['red', 'blue', 'green'];
         // ctx.fillStyle = inputText.value * colors.length;
@@ -85,12 +92,18 @@ inputText.addEventListener("keydown", (event) => {
 
         
         // emoji generator Canvas 
+        // coordinate
+        const x = Math.random() * 370;
+        const y = Math.random() * 210;
+        
         emoji = ['❤️', '🧡', '🤣', '⭐', '🥰', '😘', '🌈', '🍀', '🍓', '(」°ロ°)」', 'ヽ(*・ω・)ﾉ', '∑(O_O;)', 'o(>ω <)o', '(⁄ ⁄•⁄ω⁄•⁄ ⁄)'];
 
-        ctx.fillText(emoji[Math.floor(emoji.length * Math.random())], 20 * Math.random(), 20 * Math.random());
+
+        ctx.fillText(emoji[Math.floor(emoji.length * Math.random())], x, y);
 
         // reset input field
         inputText.value = "";
+        // websocket.send(JSON.stringify({type: "emoji", x, y, emoji}))
     }
 });
 

@@ -97,7 +97,7 @@ inputText.addEventListener("keydown", (event) => {
         const y = Math.random() * 210;
         
         emoji = ['❤️', '🧡', '🤣', '⭐', '🥰', '😘', '🌈', '🍀', '🍓', '(」°ロ°)」', 'ヽ(*・ω・)ﾉ', '∑(O_O;)', 'o(>ω <)o', '(⁄ ⁄•⁄ω⁄•⁄ ⁄)'];
-
+        ctx.font = "18px Poppins";
 
         ctx.fillText(emoji[Math.floor(emoji.length * Math.random())], x, y);
 

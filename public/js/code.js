@@ -5,8 +5,11 @@ const setNickname = document.querySelector("#setNickname");
 // variable current user | nickname
 let nickname;
 
-// use WebSocket >>> make sure server uses same ws port!
-const websocket = new WebSocket("ws://localhost:80");  
+const trimSlashes = str => str.split('/').filter(v => v !== '').join('/');
+
+const baseURL = trimSlashes(window.location.href.split("//")[1]);
+const protocol = 'wss';
+const websocket = new WebSocket(`${protocol}://${baseURL}`);
 
 const canvas = document.getElementById("canvas");
 const ctx = canvas.getContext("2d");

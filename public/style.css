@@ -68,11 +68,12 @@ input, button{
 }
 
 button {
-    background-color: rgb(243, 240, 210);
+    background-color: #FBF0D3;
+    margin-left: 5px;
 }
 
 button:hover {
-    box-shadow: 1px 3px 5px 1px rgb(247, 231, 181) inset;
+    box-shadow: 1px 3px 5px 1px #FBE6B0 inset;
 }
 
 #inputText {

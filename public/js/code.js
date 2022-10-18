@@ -2,26 +2,14 @@
 const inputText = document.getElementById("inputText");
 const setNickname = document.querySelector("#setNickname");
 
-
 // variable current user | nickname
 let nickname;
-
 
 // use WebSocket >>> make sure server uses same ws port!
 const websocket = new WebSocket("ws://localhost:80");  
 
-
-// const canvasHeight = 480;
-// const canvasWidth = 640;
-
 const canvas = document.getElementById("canvas");
 const ctx = canvas.getContext("2d");
-
-
-// ctx.canvasWidth = canvasWidth;
-// ctx.canvasHeight = canvasHeight;
-
-// console.log(canvasHeight, canvasWidth)
 
 
 /* event listeners
@@ -84,9 +72,7 @@ inputText.addEventListener("keydown", (event) => {
         websocket.send(JSON.stringify(objMessage));
 
 
-        // write Canvas 
-        // colors = ['red', 'blue', 'green'];
-        // ctx.fillStyle = inputText.value * colors.length;
+        // write Canvas
         // ctx.fillStyle = 'blue';
         // ctx.fillText(inputText.value, 20, 20);
 

@@ -97,9 +97,14 @@ li {
     margin: 15px 15px 15px 30px;
 }
 
+li span {
+    margin: auto;
+    height: 41px;
+}
+
 li p {
     margin: 0 15px 0 15px;
-    border-bottom: 1px solid rgb(212, 213, 255);
+    border-bottom: 1px solid rgb(248, 238, 204);
     /* background-color: burlywood; */
 }
 
@@ -107,14 +112,10 @@ li p, span, time {
     padding: 5px;
 }
 
-time {
-    /* background-color: powderblue; */
-    
-}
-
 .orange {
     border: 1px solid orange;
     border-radius: 10px;
+    width: 156px;
     padding: 8px;
     box-shadow: 3px 10px 15px 5px orange inset;
     background-color: rgb(255, 194, 81);

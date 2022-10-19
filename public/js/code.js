@@ -17,17 +17,14 @@ const ctx = canvas.getContext("2d");
 
 // listen on close event (server)
 websocket.addEventListener("close", (event) => {
-    // console.log('Server down...', event);
     document.getElementById("status").textContent = "Sry....server down";
 });
 
 // listen to messages from client | server
 websocket.addEventListener("message", (event) => {
-    // console.log(event.data);
 
     let obj = parseJSON(event.data);
 
-    // todo
     // use obj property 'type' to handle message event
     switch (obj.type) {
         case "text":
@@ -38,7 +35,6 @@ websocket.addEventListener("message", (event) => {
             break;
     }
 
-    // ...
     renderMessage(obj);
 });
 
@@ -75,14 +71,13 @@ inputText.addEventListener("keydown", (event) => {
         // write Canvas
         // ctx.fillStyle = 'blue';
         // ctx.fillText(inputText.value, 20, 20);
-
         
         // emoji generator Canvas 
         // coordinate
-        const x = Math.random() * 370;
-        const y = Math.random() * 220;
+        const x = Math.random() * 340;
+        const y = Math.random() * 200;
         
-        emoji = ['❤️', '🧡', '🤣', '⭐', '🥰', '😘', '🌈', '🍀', '🍓', '💕', '🎂', '(」°ロ°)」', 'ヽ(*・ω・)ﾉ', '∑(O_O;)', 'o(>ω <)o', '(⁄ ⁄•⁄ω⁄•⁄ ⁄)'];
+        emoji = ['❤️', 'ヽ(*・ω・)ﾉ', '∑(O_O;)', '⭐', '🥰', '😘', '🌈', '🍀', '🍓', '💕', '🎂', '(」°ロ°)」', 'o(>ω <)o', '🧡', '🤣', '(⁄ ⁄•⁄ω⁄•⁄ ⁄)'];
         ctx.font = "18px Poppins";
 
         ctx.fillText(emoji[Math.floor(emoji.length * Math.random())], x, y);
@@ -99,7 +94,6 @@ inputText.addEventListener("keydown", (event) => {
 
 /* functions...
 ------------------------------- */
-
 
 /**
  * parse JSON

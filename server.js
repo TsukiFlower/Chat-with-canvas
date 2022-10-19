@@ -46,11 +46,6 @@ const wss = new WebSocketServer({ noServer: true });
 server.on("upgrade", (req, socket, head) => {
     console.log("Upgrade event client: ", req.headers);
 
-    // use authentication - only logged in users allowed ?
-    // socket.write('HTTP/1.1 401 Unauthorized\r\nWWW-Authenticate: Basic\r\n\r\n');
-    // socket.destroy();
-    // return;
-
     // start websocket
     wss.handleUpgrade(req, socket, head, (ws) => {
         console.log("let user use websocket...");
@@ -80,11 +75,9 @@ wss.on("connection", (ws) => {
 
     // message event
     ws.on("message", (data) => {
-        // console.log('Message received: %s', data);
 
         let obj = parseJSON(data);
 
-        // todo
         // use obj property 'type' to handle message event
         switch (obj.type) {
             case "text":

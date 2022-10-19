@@ -11,7 +11,6 @@
 .contain {
     max-width: 1400px;
     margin: 0 auto 0 auto;
-    /* border: 1px solid grey; */
     max-height: 100vh;
     min-height: 100vh;
     background-image: url("images/starV0.3.png");
@@ -36,14 +35,12 @@
     padding-left: 0;
     padding-right: 0;
     display: block;
-    /* width: 400px; */
     background-color: white;
 }
 
 header {
     background-color: dodgerblue;
     box-shadow: 5px 10px 20px 5px rgb(61, 135, 209) inset;
-    /* height: 70px; */
     padding: 25px 0 25px 0;
 }
 
@@ -62,8 +59,8 @@ h2 {
 }
 
 input, button{
-    border:1px solid rgb(99, 99, 99);
-    padding: 8px;
+    border:1px solid rgb(117, 117, 117);
+    padding: 8px 10px 8px 10px;
     border-radius:20px;
 }
 
@@ -105,7 +102,6 @@ li span {
 li p {
     margin: 0 15px 0 15px;
     border-bottom: 1px solid rgb(248, 238, 204);
-    /* background-color: burlywood; */
 }
 
 li p, span, time {

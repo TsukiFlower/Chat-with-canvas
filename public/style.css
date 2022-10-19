@@ -59,7 +59,7 @@ h2 {
 }
 
 input, button{
-    border:1px solid rgb(117, 117, 117);
+    border: 1px solid #ebdaae;
     padding: 8px 10px 8px 10px;
     border-radius:20px;
 }
@@ -76,8 +76,8 @@ button:hover {
 #inputText {
     position: fixed;
     bottom: 60px;
-    left: 28cm;
     right: 7cm;
+    width: 580px;
 }
 
 

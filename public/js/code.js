@@ -80,9 +80,9 @@ inputText.addEventListener("keydown", (event) => {
         // emoji generator Canvas 
         // coordinate
         const x = Math.random() * 370;
-        const y = Math.random() * 210;
+        const y = Math.random() * 220;
         
-        emoji = ['❤️', '🧡', '🤣', '⭐', '🥰', '😘', '🌈', '🍀', '🍓', '(」°ロ°)」', 'ヽ(*・ω・)ﾉ', '∑(O_O;)', 'o(>ω <)o', '(⁄ ⁄•⁄ω⁄•⁄ ⁄)'];
+        emoji = ['❤️', '🧡', '🤣', '⭐', '🥰', '😘', '🌈', '🍀', '🍓', '💕', '🎂', '(」°ロ°)」', 'ヽ(*・ω・)ﾉ', '∑(O_O;)', 'o(>ω <)o', '(⁄ ⁄•⁄ω⁄•⁄ ⁄)'];
         ctx.font = "18px Poppins";
 
         ctx.fillText(emoji[Math.floor(emoji.length * Math.random())], x, y);

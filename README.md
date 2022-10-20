@@ -14,4 +14,4 @@ npm install express
 
 write in your name or nickname (will lock in)
 then you will be able to chat real time
-as a fun thing you get a random emoji everytime you Enter.  
+as a fun thing you get a random emoji everytime you press Enter.  

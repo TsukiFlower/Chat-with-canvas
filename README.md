@@ -3,14 +3,14 @@
 
 -- HOW TO DO --
 
-use git clone
+Clone the git repo.
 
-npm init
+Install all dependencies with 'npm install'.
 
-npm install ws
+Then...
 
-npm install express
-
+Start server 'node server' in terminal.
+Open browser and visit localhost:8000.
 
 write in your name or nickname (will lock in)
 then you will be able to chat real time

@@ -3,14 +3,16 @@
 
 -- HOW TO DO --
 
-Clone the git repo.
+1. Go to terminal.
 
-Install all dependencies with 'npm install'.
+2. Clone the git repo and paste in terminalen.
+
+3. Install all dependencies with 'npm install'.
 
 Then...
 
-Start server 'node server' in terminal.
-Open browser and visit localhost:8000.
+4. Start server 'node server' in terminal.
+5. Open browser and visit localhost:8000.
 
 write in your name or nickname (will lock in)
 then you will be able to chat real time
